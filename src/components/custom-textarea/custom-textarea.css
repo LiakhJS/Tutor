@@ -1,0 +1,9 @@
+
+.custom-item textarea:focus-visible
+{
+  outline: none;
+}
+.custom-textarea {
+width:100%;
+height: 150px;
+}

@@ -1,0 +1,36 @@
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.sert-upload .btn-wrapper {
+justify-content: flex-start;}
+.empty-btn,
+.filled-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+border-radius: 100px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 130%;
+
+}
+.empty-btn {
+  background: #FEFEFF;
+  border: 2px solid #5E66A7;
+  color: #5E66A7;
+}
+.filled-btn {
+  background: #5E66A7;
+  border: 2px solid #5E66A7;
+  color: #FEFEFF;
+  
+}
+
+
+

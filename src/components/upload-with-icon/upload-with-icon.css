@@ -1,0 +1,19 @@
+
+.upload.upload-with-icon {
+
+
+cursor: pointer;
+}
+
+.upload.upload-with-icon,
+.upload.upload-with-icon input,
+.upload.upload-with-icon .upload_bl.filled-btn{
+width:52px;
+height: 52px;
+}
+.upload_bl_icon {
+width:32px;
+
+height: 32px;
+}
+

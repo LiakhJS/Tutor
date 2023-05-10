@@ -1,0 +1,84 @@
+footer {
+  padding: 60px 130px 10px 130px;
+  display: flex;
+  column-gap: 80px;
+  height: 340px;
+  background: #5e66a7;
+}
+footer .tutor-logo {
+  align-items: flex-start;
+}
+footer .tutor-logo_svg path {
+  fill: #fefeff;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  /* column-gap: 100px; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.nav-block {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+.about-company,
+.teachers,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 100%;
+}
+.about-company > h2,
+.teachers > h2,
+.contacts > h2 {
+  padding-bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #fefeff;
+}
+.about-company ul li,
+.teachers ul li,
+.more-lang,
+.contacts ul li,
+.contacts > span,
+.nav-block span:last-of-type {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+
+  color: #fefeff;
+}
+
+.nav-block span:last-of-type {
+  font-size: 14px;
+}
+.about-company ul li,
+.teachers ul li,
+.more-lang,
+.contacts ul li,
+.contacts > span:last-of-type {
+  font-size: 18px;
+}
+.more-lang {
+  text-align: right;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.teachers > ul {
+  display: flex;
+  column-gap: 40px;
+}
+.teachers > ul > li > ul,
+.about-company > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+}

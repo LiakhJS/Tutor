@@ -1,0 +1,1 @@
+export { UploadWithIcon } from './upload-with-icon';

@@ -1,0 +1,8 @@
+.st-lang-bl {display: flex;
+width:100%;
+flex-direction: column;
+row-gap:20px;}
+
+.st-lang-bl .btn-wrapper {
+justify-content: flex-start;
+}

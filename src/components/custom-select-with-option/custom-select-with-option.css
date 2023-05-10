@@ -1,0 +1,18 @@
+.custom-select.custom-select-with-opt {
+padding: 0;
+margin: 0;
+width:61px;
+height:24px;
+color: #A2A2A2;
+	background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.414376 1.03151C0.673133 0.70806 1.1451 0.655619 1.46855 0.914376L6.00003 4.53956L10.5315 0.914376C10.855 0.655619 11.3269 0.70806 11.5857 1.03151C11.8444 1.35495 11.792 1.82692 11.4685 2.08568L6.46855 6.08568C6.19464 6.30481 5.80542 6.30481 5.53151 6.08568L0.531506 2.08568C0.20806 1.82692 0.155619 1.35495 0.414376 1.03151Z' fill='%23A2A2A2'/%3E%3C/svg%3E");
+
+background-position: right 6.25px top 50%, 0 0;
+border: none;
+}
+.custom-item.selected-opt {
+  width:auto;
+  }
+  
+  .custom-select.custom-select-with-opt.lang {
+  width:50px;
+  }

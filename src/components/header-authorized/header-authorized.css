@@ -1,0 +1,70 @@
+.lang-auth-reg-btns.authorized {
+flex-direction: column;
+row-gap: 20px;}
+.notifications {
+  display: flex;
+column-gap: 20px;
+height: 38px;
+}
+.lang {
+justify-content: flex-end;
+width:100%;
+}
+.notifications_mail,
+.notifications_news,
+.notifications_ava {
+  
+
+  position: relative;
+  position: relative;
+  /* height: 100%; */
+  display: flex;
+  /* bottom: 0; */
+  align-items: end;
+}
+.notifications_mail>span,
+.notifications_news >span {
+position: absolute;
+top: 0;
+right: 0;
+}
+.tutor-menu.sec-reg {
+display: flex;
+flex-direction: column;
+gap:18px;
+}
+.tutor-menu_balance,
+.tutor-menu_items{
+  display: flex;
+  gap:20px;
+  
+  ;
+}
+.balance_state {
+  display: flex;
+  justify-content: space-between;
+  align-items:  baseline;
+}
+
+.balance_currency{display: flex;
+align-items:center}
+.balance_state.custom-input {
+  width: 180px;
+  height: 43px;
+margin:0;
+
+border: 1px solid #B6B6BB;
+
+}
+.balance_state.custom-input >span:last-of-type {
+  color: #4A4A4F;
+}
+
+.notifications_mail_counter {
+  background: #E84035;
+  width: 16px;
+  text-align: center;
+  color: #FEFEFF;
+  height: 16px;
+  border-radius: 50px;
+}

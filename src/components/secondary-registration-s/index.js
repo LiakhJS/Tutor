@@ -1,0 +1,1 @@
+export { SecondaryRegistrationS } from './secondary-registration-s';

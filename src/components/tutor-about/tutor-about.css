@@ -1,0 +1,66 @@
+
+.tutor-about {
+  padding-top: 124px;
+  color: #5e66a7;
+}
+.tutor-about_title {
+  padding-bottom: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.tutor-about_title > div > h1 {
+  padding: 4px 15px;
+  text-transform: uppercase;
+  background: #5e66a7;
+  border-radius: 4px;
+  justify-content: center;
+  color: #fefeff;
+  margin-right: 6px;
+}
+.tutor-about_title_1,
+.tutor-about_title_2,
+.tutor-about_title > div > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  font-size: 30px;
+  display: flex;
+}
+
+.tutor-about_item span {
+    display: flex;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 320px;
+    height: 66px;
+    background: rgba(231, 231, 255, 0.4);
+    border: 2px solid #5E66A7;
+    border-radius: 4px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;    
+    display: flex;  
+    color: #5E66A7;
+    align-items: flex-start;
+}
+.tutor-about_item span:first-child{
+    transform: rotate(-5deg);
+    margin-bottom:10px;
+}
+.tutor-about_item span:last-child {
+    transform: rotate(2deg);
+    position: absolute;
+left: 331px;
+    }
+.tutor-about_back {
+padding-top:70px;}

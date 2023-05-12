@@ -1,19 +1,73 @@
 .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   row-gap: 30px;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .tutor-about,
 .tutor-auth,
-.tutor-reg{
+.tutor-reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: calc(50% - 15px);
-  
+}
+
+.tutor-auth,
+.tutor-reg {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main {
-padding:0px 130px 150px 130px;
+  padding: 0px 130px 150px 130px;
+}
 
+@media screen and (max-width: 1440px) {
+  main {
+    padding: 0px 60px 60px 60px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .tutor-about {
+    width: 100%;
+  }
+
+  .tutor-auth,
+  .tutor-reg {
+    width: 100%;
+  }
+
+  .tutor-auth,
+  .tutor-reg {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

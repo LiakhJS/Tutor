@@ -1,7 +1,5 @@
-
-import { configureStore } from '@reduxjs/toolkit';
-import { registrationAuthorization } from './registrationAndAuthorization';
-
+import { configureStore } from "@reduxjs/toolkit";
+import { registrationAuthorization } from "./regAndAutSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,7 +8,5 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: false,
-    })
-
+    }),
 });
-

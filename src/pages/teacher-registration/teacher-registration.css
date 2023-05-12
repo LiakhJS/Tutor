@@ -1,46 +1,124 @@
 .profile_ava,
-.profile-ava_change_btns{
-display: flex;
-}
-.profile_ava,
-.profile-ava_change{
-
-gap:20px;}
 .profile-ava_change_btns {
-gap:24px}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile_ava,
 .profile-ava_change {
-display: flex;
-flex-direction: column;
+  gap: 20px;
 }
-.profile-ava_change > span {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    color: #A2A2A2;
+
+.profile-ava_change_btns {
+  gap: 24px;
 }
+
+.profile-ava_change_btns .btn-wrapper {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.profile-ava_change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-ava_change>span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #a2a2a2;
+}
+
 .profile_ava_picture {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 80px;
-height: 80px;
-background: #E7E7FF;
-border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #e7e7ff;
+  border-radius: 100px;
 }
+
 .main-container.sec-reg {
-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .filled-btn.next {
-    width:94px;
-    height: 43px;
-    }
-    .profile_ava_picture {
+  width: 94px;
+  height: 43px;
+}
 
-    }
-    .profile_ava_picture >img {
-    width: 56px;
-    height: 56px;
-    }
+.profile_ava_picture {}
 
+.profile_ava_picture>img {
+  width: 56px;
+  height: 56px;
+}
+
+.profile-ava_change {
+  row-gap: 10px;
+}
+
+.profile-ava_change_btns {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .profile-ava_change>span {
+    width: 330px;
+  }
+
+  .profile-ava_change,
+  .profile-ava_change_btns {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile_ava {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .profile-ava_change,
+  .profile-ava_change_btns {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .profile-ava_change>span {
+    text-align: center;
+  }
+}

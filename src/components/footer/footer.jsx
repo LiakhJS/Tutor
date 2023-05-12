@@ -3,13 +3,13 @@ import './footer.css';
 
 export const Footer = () => (
   <footer>
-    <div className="tutor-logo">
-      <TutorLogo className="tutor-logo_svg" />
+    <div className='tutor-logo'>
+      <TutorLogo className='tutor-logo_svg' />
     </div>
     <nav>
-      <div className="nav-block">
-        <div className="about-company">
-          <h2 className="about-company_title">О компании</h2>
+      <div className='nav-block'>
+        <div className='about-company'>
+          <h2 className='about-company_title'>О компании</h2>
           <ul>
             <li>О нас</li>
             <li>Найти репетитора</li>
@@ -19,9 +19,9 @@ export const Footer = () => (
         </div>
         <span>Условия использования</span>
       </div>
-      <div className="nav-block">
-        <div className="teachers">
-          <h2 className="teachers_title">Преподаватели</h2>
+      <div className='nav-block'>
+        <div className='teachers'>
+          <h2 className='teachers_title'>Преподаватели</h2>
           <ul>
             <li>
               <ul>
@@ -42,20 +42,17 @@ export const Footer = () => (
               </ul>
             </li>
           </ul>
-          <span className="more-lang">Ещё</span>
+          <span className='more-lang'>Ещё</span>
         </div>
         <span>Политика конфиденциальности</span>
       </div>
-
-      <div className="nav-block">
-        <div className="contacts">
-          <h2 className="contacts_title">Связаться с нами</h2>
+      <div className='nav-block'>
+        <div className='contacts'>
+          <h2 className='contacts_title'>Связаться с нами</h2>
           <span>Email: asktutor24@gmail.com</span>
         </div>
         <span>&copy; 2021–2022 All rights reserved</span>
       </div>
-
     </nav>
-
   </footer>
 );

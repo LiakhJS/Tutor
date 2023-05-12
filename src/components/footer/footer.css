@@ -1,84 +1,233 @@
 footer {
   padding: 60px 130px 10px 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  column-gap: 80px;
-  height: 340px;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
   background: #5e66a7;
 }
+
 footer .tutor-logo {
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
+
 footer .tutor-logo_svg path {
   fill: #fefeff;
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  /* column-gap: 100px; */
-  justify-content: space-between;
-  align-items: flex-start;
+  height: 270px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.nav-block {
-  display: flex;
-  flex-direction: column;
 
+.nav-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
+
 .about-company,
 .teachers,
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex: 0 1 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
 }
-.about-company > h2,
-.teachers > h2,
-.contacts > h2 {
+
+.about-company>h2,
+.teachers>h2,
+.contacts>h2 {
   padding-bottom: 20px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 130%;
   color: #fefeff;
 }
+
 .about-company ul li,
 .teachers ul li,
 .more-lang,
 .contacts ul li,
-.contacts > span,
+.contacts>span,
 .nav-block span:last-of-type {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-
   color: #fefeff;
 }
 
 .nav-block span:last-of-type {
   font-size: 14px;
 }
+
 .about-company ul li,
 .teachers ul li,
 .more-lang,
 .contacts ul li,
-.contacts > span:last-of-type {
+.contacts>span:last-of-type {
   font-size: 18px;
 }
+
 .more-lang {
   text-align: right;
   font-size: 14px;
   line-height: 120%;
 }
 
-.teachers > ul {
+.teachers>ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  column-gap: 40px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
-.teachers > ul > li > ul,
-.about-company > ul {
+
+.teachers>ul>li>ul,
+.about-company>ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 17px;
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    padding: 60px 60px 10px 60px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  nav {
+    height: 250px;
+  }
+
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    padding: 40px 60px 10px 60px;
+  }
+
+  .about-company ul li,
+  .teachers ul li,
+  .more-lang,
+  .contacts ul li,
+  .contacts>span:last-of-type {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .teachers>ul>li>ul,
+  .about-company>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  nav {
+    height: auto;
+    row-gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .nav-block {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 20px;
+  }
+
+  footer .tutor-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+
+  .about-company ul li,
+  .teachers ul li,
+
+  .contacts ul li,
+  .contacts>span:last-of-type {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .more-lang {
+    margin-top: 5px;
+  }
+
+  .about-company>h2,
+  .teachers>h2,
+  .contacts>h2 {
+    text-align: center;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .about-company>h2,
+  .teachers>h2,
+  .contacts>h2 {
+    font-size: 20px;
+  }
+
+
+  .nav-block span:last-of-type:not(.more-lang) {
+    text-align: center;
+  }
 }

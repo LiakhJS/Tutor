@@ -1,66 +1,175 @@
-
 .tutor-about {
   padding-top: 124px;
   color: #5e66a7;
 }
+
 .tutor-about_title {
   padding-bottom: 40px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
+  line-height: 130%;
   font-size: 30px;
-  display: flex;
-  flex-direction: column;
+  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.tutor-about_title > div > h1 {
+
+.tutor-about_title>h1 {
   padding: 4px 15px;
   text-transform: uppercase;
   background: #5e66a7;
   border-radius: 4px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fefeff;
   margin-right: 6px;
 }
-.tutor-about_title_1,
-.tutor-about_title_2,
-.tutor-about_title > div > h1 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+
+.tutor-about_title>h1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
   font-size: 30px;
+  display: inline;
+}
+
+.tutor-about_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
 }
 
 .tutor-about_item span {
-    display: flex;
-    padding: 10px 20px;
-    gap: 10px;
-    width: 320px;
-    height: 66px;
-    background: rgba(231, 231, 255, 0.4);
-    border: 2px solid #5E66A7;
-    border-radius: 4px;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;    
-    display: flex;  
-    color: #5E66A7;
-    align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 320px;
+  height: 66px;
+  background: rgba(231, 231, 255, 0.4);
+  border: 2px solid #5e66a7;
+  border-radius: 4px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  display: flex;
+  color: #5e66a7;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.tutor-about_item span:first-child{
-    transform: rotate(-5deg);
-    margin-bottom:10px;
+
+.tutor-about_item div:first-child {
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
-.tutor-about_item span:last-child {
-    transform: rotate(2deg);
-    position: absolute;
-left: 331px;
-    }
+
+.tutor-about_item div:last-child {
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .tutor-about_back {
-padding-top:70px;}
+  padding-top: 70px;
+}
+
+@media screen and (max-width: 1280px) {
+  .tutor-about_item {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .tutor-about {
+    padding-top: 0px;
+  }
+
+  .tutor-about_item div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .tutor-about_item {
+    gap: 5px;
+  }
+
+  .tutor-about_back {
+    padding-top: 30px;
+  }
+
+  .tutor-about_back_svg {
+    height: auto;
+    width: 100%;
+  }
+
+  .tutor-about_back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tutor-about_item {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tutor-about_item {
+    gap: 20px;
+  }
+
+  .tutor-about_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tutor-about_title {
+    font-size: 20px;
+  }
+
+  .tutor-about_item span {
+    width: 100%;
+    height: 93px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .tutor-about_item {
+    gap: 30px;
+  }
+}

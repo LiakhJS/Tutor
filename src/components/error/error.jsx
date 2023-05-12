@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 
-import { ReactComponent as  ErrorIcon} from '../../images/attention-icon.svg';
-import { ReactComponent as  CloseIcon} from '../../images/error-cross-icon.svg';
+import { ReactComponent as ErrorIcon } from '../../assets//icons/attention-icon.svg';
+import { ReactComponent as RemoveIcon } from '../../assets/icons/remove.svg';
 
 import './error.css';
 
@@ -10,13 +10,11 @@ export const Error = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div className={classNames('error', { hidden: !isOpen })} data-test-id='error'>
+    <div className={classNames('error', { hidden: !isOpen })}>
       <div className='content-error'>
-      <ErrorIcon/> Что-то пошло не так. Обновите страницу через некоторое время.
+        <ErrorIcon /> Что-то пошло не так. Войдите или зарегистрируйтесь.
       </div>
-      <button className='closeBtn' type='button' onClick={() => setIsOpen(false)}>
-      <CloseIcon width='100%' height='100%'/>
-      </button>
+      <RemoveIcon width='40px' height='40px' onClick={() => setIsOpen(false)} />
     </div>
   );
 };

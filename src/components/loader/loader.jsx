@@ -1,11 +1,10 @@
-import { ReactComponent as LoaderIcon } from '../../images/loader.svg';
-
-import './loader.css';
+import "./loader.css";
 
 export const Loader = () => (
-  <div className='container' data-test-id='loader'>
-    <div className='loader'>
-      <LoaderIcon />
+  <div className="preloader">
+    <div className="preloader__row">
+      <div className="preloader__item"></div>
+      <div className="preloader__item"></div>
     </div>
   </div>
 );

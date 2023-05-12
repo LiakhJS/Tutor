@@ -22,7 +22,7 @@ instance.interceptors.request.use((config) => {
 });
 
 export const authorizationThunk = createAsyncThunk('auth', async ({ data }) => {
-  console.log(data);
+
   const authData = await instance
     .post(`${authEndpoint}`, data)
     .then((response) => response.data);

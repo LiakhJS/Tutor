@@ -52,32 +52,32 @@ export const ProfileStudentPage = () => {
               <div className='user_type'>Student</div>
               <div className='user_inf'>
                 <div className='user_inf_title'>Имя</div>
-                <div className='user_inf_value'>{userStudent.first_name}</div>
+                <div className='user_inf_value'>{userStudent.user.first_name}</div>
               </div>
               <div className='user_inf'>
                 <div className='user_inf_title'>Фамилия</div>
-                <div className='user_inf_value'>{userStudent.last_name}</div>
+                <div className='user_inf_value'>{userStudent.user.last_name}</div>
               </div>
               <div className='user_inf'>
                 <div className='user_inf_title'>Email</div>
-                <div className='user_inf_value'>{userStudent.email}</div>
+                <div className='user_inf_value'>{userStudent.user.email}</div>
               </div>
               <div className='user_inf'>
                 <div className='user_inf_title'>Verify email</div>
                 <div className='user_inf_value'>
-                  {String(userStudent.is_verify_email)}
+                  {String(userStudent.user.is_verify_email)}
                 </div>
               </div>
               <div className='user_inf'>
                 <div className='user_inf_title'>Дата Рождения</div>
                 <div className='user_inf_value'>
-                  {userStudent.date_of_birthday || 'дата рождения не выбрана'}
+                  {userStudent.user.date_of_birthday || 'дата рождения не выбрана'}
                 </div>
               </div>
               <div className='user_inf'>
                 <div className='user_inf_title'>Страна</div>
                 <div className='user_inf_value'>
-                  {userStudent.country || 'старана не выбрана'}
+                  {userStudent.user.country || 'старана не выбрана'}
                 </div>
               </div>
               <div className='user_inf'>

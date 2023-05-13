@@ -23,8 +23,6 @@ import {
 
 import "../custom-input/custom-input.css";
 import "../../components/button/button.css";
-import "../custom-input/custom-input.css";
-import "../../components/button/button.css";
 import "../secondary-registration-t/secondary-registration-t.css";
 import "./secondary-registration-s.css";
 

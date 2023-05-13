@@ -162,8 +162,9 @@ const registrationAuthorization = createSlice({
     builder.addCase(signUpStudentThunk.fulfilled, (state, action) => {
       state.signUpStudentStatus = 'resolved';
     });
-    builder.addCase(signUpStudentThunk.rejected, (state) => {
+    builder.addCase(signUpStudentThunk.rejected, (state, action) => {
       state.signUpStudentStatus = 'failed';
+      console.log(action.payload);
     });
     builder.addCase(getUserThunk.pending, (state) => {
       state.getUserStatus = 'loading';

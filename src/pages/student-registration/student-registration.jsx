@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from "react-redux";
 import {
   getStudentThunk,
   signUpStudentThunk,
-} from '../../store/regAndAutSlice';
+} from "../../store/regAndAutSlice";
 
-import { Footer } from '../../components/footer/footer';
-import { SecondaryRegistrationS } from '../../components/secondary-registration-s';
-import { FileUploadSingle } from '../../components/upload/upload';
-import { Button } from '../../components/button/button';
-import { HeaderAuthorized } from '../../components/header-authorized';
-import { Error } from '../../components/error/error';
-import { Loader } from '../../components/loader/loader';
-import unknownUser from '../../assets/icons/unknown-user.svg';
+import { Footer } from "../../components/footer/footer";
+import { SecondaryRegistrationS } from "../../components/secondary-registration-s";
+import { FileUploadSingle } from "../../components/upload/upload";
+import { Button } from "../../components/button/button";
+import { HeaderAuthorized } from "../../components/header-authorized";
+import { Error } from "../../components/error/error";
+import { Loader } from "../../components/loader/loader";
+import unknownUser from "../../assets/icons/unknown-user.svg";
 
-import './student-registration.css';
-import '../../components/button/button.css';
-import '../teacher-registration/teacher-registration.css';
+import "./student-registration.css";
+import "../../components/button/button.css";
+import "../teacher-registration/teacher-registration.css";
 
 export const StudentRegistration = () => {
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ export const StudentRegistration = () => {
   };
 
   useEffect(() => {
-    if (signUpBaseStatus === 'resolved') {
+    if (signUpBaseStatus === "resolved") {
       dispatch(getStudentThunk());
     }
   }, [dispatch, signUpBaseStatus]);
@@ -46,29 +46,29 @@ export const StudentRegistration = () => {
 
   useEffect(() => {
     if (file) {
-      formData.append('files', file);
+      formData.append("files", file);
       setFile(null);
     }
   }, [dispatch, file, formData]);
 
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <HeaderAuthorized />
       <main>
-        {(signUpBaseStatus === 'loading' || getStudentStatus === 'loading') && (
+        {(signUpBaseStatus === "loading" || getStudentStatus === "loading") && (
           <Loader />
         )}
-        {signUpBaseStatus === 'failed' && <Error />}
-        {signUpBaseStatus === 'resolved' && getStudentStatus === 'resolved' && (
-          <div className='main-container sec-reg'>
-            <section className='profile_ava'>
-              <div className='profile_ava_picture'>
-                <img src={unknownUser} alt='profile-ava' />
+        {signUpBaseStatus === "failed" && <Error />}
+        {signUpBaseStatus === "resolved" && getStudentStatus === "resolved" && (
+          <div className="main-container sec-reg">
+            <section className="profile_ava">
+              <div className="profile_ava_picture">
+                <img src={unknownUser} alt="profile-ava" />
               </div>
-              <div className='profile-ava_change'>
-                <div className='profile-ava_change_btns'>
+              <div className="profile-ava_change">
+                <div className="profile-ava_change_btns">
                   <FileUploadSingle handleFileChange={handleFileChange} />
-                  <Button type='button' className='empty-btn'>
+                  <Button type="button" className="empty-btn">
                     Удалить
                   </Button>
                 </div>

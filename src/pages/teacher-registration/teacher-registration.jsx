@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
 import {
   signUpTeacherThunk,
   getTeacherThunk,
-} from '../../store/regAndAutSlice';
+} from "../../store/regAndAutSlice";
 
-import { Footer } from '../../components/footer/footer';
-import { Button } from '../../components/button/button';
-import { FileUploadSingle } from '../../components/upload/upload';
-import { SecondaryRegistrationT } from '../../components/secondary-registration-t';
-import { HeaderAuthorized } from '../../components/header-authorized';
-import { Error } from '../../components/error/error';
-import { Loader } from '../../components/loader/loader';
-import unknownUser from '../../assets/icons/unknown-user.svg';
+import { Footer } from "../../components/footer/footer";
+import { Button } from "../../components/button/button";
+import { FileUploadSingle } from "../../components/upload/upload";
+import { SecondaryRegistrationT } from "../../components/secondary-registration-t";
+import { HeaderAuthorized } from "../../components/header-authorized";
+import { Error } from "../../components/error/error";
+import { Loader } from "../../components/loader/loader";
+import unknownUser from "../../assets/icons/unknown-user.svg";
 
-import './teacher-registration.css';
-import '../../components/button/button.css';
+import "./teacher-registration.css";
+import "../../components/button/button.css";
 
 export const TeacherRegistration = () => {
   const dispatch = useDispatch();
@@ -34,7 +34,7 @@ export const TeacherRegistration = () => {
   };
 
   useEffect(() => {
-    if (signUpBaseStatus === 'resolved') {
+    if (signUpBaseStatus === "resolved") {
       dispatch(getTeacherThunk());
     }
   }, [dispatch, signUpBaseStatus]);
@@ -45,29 +45,29 @@ export const TeacherRegistration = () => {
 
   useEffect(() => {
     if (file) {
-      formData.append('files', file);
+      formData.append("files", file);
       setFile(null);
     }
   }, [dispatch, file, formData]);
 
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <HeaderAuthorized />
       <main>
-        {(signUpBaseStatus === 'loading' || getTeacherStatus === 'loading') && (
+        {(signUpBaseStatus === "loading" || getTeacherStatus === "loading") && (
           <Loader />
         )}
-        {signUpBaseStatus === 'failed' && <Error />}
-        {signUpBaseStatus === 'resolved' && getTeacherStatus === 'resolved' && (
-          <div className='main-container sec-reg'>
-            <section className='profile_ava'>
-              <div className='profile_ava_picture'>
-                <img src={unknownUser} alt='profile-ava' />
+        {signUpBaseStatus === "failed" && <Error />}
+        {signUpBaseStatus === "resolved" && getTeacherStatus === "resolved" && (
+          <div className="main-container sec-reg">
+            <section className="profile_ava">
+              <div className="profile_ava_picture">
+                <img src={unknownUser} alt="profile-ava" />
               </div>
-              <div className='profile-ava_change'>
-                <div className='profile-ava_change_btns'>
+              <div className="profile-ava_change">
+                <div className="profile-ava_change_btns">
                   <FileUploadSingle handleFileChange={handleFileChange} />
-                  <Button type='button' className='empty-btn'>
+                  <Button type="button" className="empty-btn">
                     Удалить
                   </Button>
                 </div>

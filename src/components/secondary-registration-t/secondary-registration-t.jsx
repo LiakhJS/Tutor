@@ -22,9 +22,11 @@ import { UploadWithIcon } from '../upload-with-icon';
 import { ReactComponent as RemoveIcon } from '../../assets/icons/remove.svg';
 import sertificateImage from '../../assets/icons/sertificate.svg';
 
-import './secondary-registration-t.css';
-import '../custom-input/custom-input.css';
 import '../../components/button/button.css';
+import '../custom-input/custom-input.css';
+
+import "./secondary-registration-t.css";
+import "../secondary-registration-s/secondary-registration-s.css";
 
 export const SecondaryRegistrationT = ({ signUpTeacher }) => {
   const navigate = useNavigate();
@@ -37,9 +39,11 @@ export const SecondaryRegistrationT = ({ signUpTeacher }) => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm({ mode: 'onChange' });
   const onSubmit = (data) => {
+  console.log(data);
     signUpTeacher({
       data: {
         date_of_birthday: String(data.dateOfBirth),
@@ -83,7 +87,7 @@ export const SecondaryRegistrationT = ({ signUpTeacher }) => {
               {...register('firstName', {
                 required: true,
                 value: `${userTeacherFirstName}`,
-                pattern: /^[A-Za-z0-9]+$/,
+       
               })}
             />
             <CustomInput
@@ -281,8 +285,8 @@ export const SecondaryRegistrationT = ({ signUpTeacher }) => {
             placeholder={TextareaPlaceholder.EnterText}
             title={TextareaPlaceholder.DescribeYourSkills}
             required={true}
-            autoComplete='on'
-            {...register('description', { required: true, min: 1 })}
+   
+            {...register('description', {  })}
           />
           <div className='next-btn'>
             <input type='submit' value='Далее' className='filled-btn next' />

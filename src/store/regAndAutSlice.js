@@ -44,6 +44,7 @@ export const signUpBaseThunk = createAsyncThunk(
     const signUpBaseData = await instance
       .post(`${signUpBaseEndpoint}`, data)
       .then((response) => response.data);
+      
 
     return signUpBaseData;
   }

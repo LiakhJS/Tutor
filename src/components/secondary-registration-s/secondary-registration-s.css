@@ -1,72 +1,49 @@
 .st-lang-bl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 880px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 20px;
 }
 
 .st-lang-bl .btn-wrapper {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
-
 @media screen and (max-width: 1080px) {
   .st-lang-bl {
     width: 100%;
   }
-
-  .is-not-confirmed>span {
+  .is-not-confirmed > span {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 640px) {
   .st-lang-bl {
     width: 380px;
   }
-
   .st-lang-bl .custom-form_s {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 20px;
   }
-
   .is-not-confirmed {
     height: auto;
   }
-
   .custom-form_s .hidden-bl {
     display: none;
   }
 
-  .is-not-confirmed>span {
+  .is-not-confirmed > span {
     width: 380px;
   }
-
   .tutor-secondary-reg .custom-form {
     row-gap: 20px;
   }
 
   .profile-ava_change_btns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 
   }
-
   .profile-ava_change .btn-wrapper {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
 
@@ -74,8 +51,7 @@
   .st-lang-bl {
     width: 100%;
   }
-
-  .is-not-confirmed>span {
+  .is-not-confirmed > span {
     width: 100%;
   }
 }

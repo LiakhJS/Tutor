@@ -1,20 +1,13 @@
 .user-type-bl {
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 10px;
 }
 
 .user-type-bl>h3 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -23,37 +16,25 @@
 }
 
 .reg-title-and-user-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 30px;
 }
 
 .is-not-confirmed {
   width: 100%;
   position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
   background: #e7e7ff;
   border-radius: 5px;
   height: 71px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   top: -10px;
 }
 
 .is-not-confirmed>span {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -74,33 +55,21 @@
 }
 
 .tt-lang-bl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   row-gap: 20px;
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .tt-lang-bl>div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 
   gap: 120px;
 }
 
 .sert-upload {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 20px;
   width: 100%;
 }
@@ -110,23 +79,14 @@
 }
 
 .sert-upload_descr {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  column-gap: 20px;
 }
 
 .sert-upload_descr_inf {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 8.5px;
   position: relative;
 }
@@ -140,24 +100,16 @@
 }
 
 .sert-upload_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .sert-upload_btn,
 .add-lang {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Rubik';
+  column-gap: 20px;
+  align-items: center;
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -172,25 +124,16 @@
 }
 
 .prof-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 30px;
   width: 880px;
 }
 
 .next-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 main {
@@ -205,15 +148,12 @@ main {
   }
 
   .custom-form_s {
-    -webkit-column-gap: 60px;
-       -moz-column-gap: 60px;
-            column-gap: 60px;
+    column-gap: 60px;
   }
 
   .tt-lang-bl>div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+
     gap: 60px;
   }
 
@@ -226,10 +166,7 @@ main {
 
   .custom-form_bl .custom-form_s,
   .tt-lang-bl .custom-form_s {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 380px;
     row-gap: 20px;
   }

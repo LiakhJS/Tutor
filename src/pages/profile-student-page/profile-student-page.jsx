@@ -77,7 +77,7 @@ export const ProfileStudentPage = () => {
               <div className='user_inf'>
                 <div className='user_inf_title'>Страна</div>
                 <div className='user_inf_value'>
-                  {userStudent.user.country || 'старана не выбрана'}
+                  {userStudent.user.country || 'страна не выбрана'}
                 </div>
               </div>
               <div className='user_inf'>

@@ -85,7 +85,7 @@ export const ProfileTeacherPage = () => {
               <div className="user_inf">
                 <div className="user_inf_title">Страна</div>
                 <div className="user_inf_value">
-                  {userTeacher.user.country || "старана не выбрана"}
+                  {userTeacher.user.country || "страна не выбрана"}
                 </div>
               </div>
               {userTeacher.teaching_languages.map((item, index) => (

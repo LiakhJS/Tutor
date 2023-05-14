@@ -39,7 +39,6 @@ export const SecondaryRegistrationT = ({ signUpTeacher }) => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm({ mode: 'onChange' });
   const onSubmit = (data) => {

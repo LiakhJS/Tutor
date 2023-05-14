@@ -32,10 +32,10 @@ export const ProfilePage = () => {
   };
 
   useEffect(() => {
-    if (authorizationStatus === "resolved" || Cookies.get("token") !== null) {
+    if (authorizationStatus === "resolved") {
       dispatch(getUserThunk());
     }
-  }, [dispatch, authorizationStatus]);
+  }, [authorizationStatus, dispatch]);
 
   return (
     <div className="wrapper">

@@ -8,11 +8,13 @@
   background: #fefeff;
   box-shadow: 0px 12px 24px rgba(129, 137, 197, 0.2);
 }
+
 .custom-form_s {
   display: flex;
   column-gap: 120px;
   width: 100%;
 }
+
 .tutor-secondary-reg .custom-form {
   padding: 0;
   box-shadow: none;
@@ -25,6 +27,7 @@
   flex-direction: column;
   row-gap: 20px;
 }
+
 .custom-input {
   margin-top: 10px;
   width: 100%;
@@ -37,6 +40,7 @@
   border: 1px solid #a2a2a2;
   border-radius: 5px;
 }
+
 .custom-input::placeholder {
   font-family: "Rubik";
   font-style: normal;
@@ -45,6 +49,7 @@
   line-height: 130%;
   color: #b6b6bb;
 }
+
 .reg-title-and-user-type {
   width: 100%;
 }
@@ -60,15 +65,18 @@
   justify-content: center;
   width: 100%;
 }
+
 .custom-item {
   position: relative;
   width: 100%;
 }
+
 .custom-form_s .custom-item,
 .custom-form_s .is-not-confirmed,
-.custom-form_s .hidden-bl
-{
-width:380px;}
+.custom-form_s .hidden-bl {
+  width: 380px;
+}
+
 .custom-label {
   font-family: "Montserrat";
   font-style: normal;
@@ -78,11 +86,13 @@ width:380px;}
 
   color: #4a4a4f;
 }
+
 .tutor-auth svg.eye {
   position: absolute;
   right: 10px;
-  bottom: 36px;
+  top: 40px;
 }
+
 .tutor-reg svg.eye {
   position: absolute;
   right: 10px;
@@ -93,6 +103,7 @@ width:380px;}
   display: flex;
   column-gap: 10px;
 }
+
 .social-links,
 .link-to-auth-page {
   display: flex;
@@ -102,12 +113,14 @@ width:380px;}
   width: 100%;
   padding-top: 10px;
 }
+
 .social-links_bl {
   justify-content: center;
   display: flex;
   gap: 20px;
 }
-a > span.field_valid.forgot-pass {
+
+a>span.field_valid.forgot-pass {
   display: flex;
   margin-top: 10px;
   justify-content: flex-end;
@@ -118,12 +131,14 @@ a > span.field_valid.forgot-pass {
   line-height: 120%;
   color: #5e66a7;
 }
+
 .btn-and-link-to-reg-page {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .custom-form .filled-btn {
   width: 100%;
 }
@@ -131,6 +146,7 @@ a > span.field_valid.forgot-pass {
 .custom-item input:focus-visible {
   outline: none;
 }
+
 .signup-question {
   font-family: "Rubik";
   font-style: normal;
@@ -140,6 +156,7 @@ a > span.field_valid.forgot-pass {
 
   color: #a2a2a2;
 }
+
 .signup-link {
   font-family: "Rubik";
   font-style: normal;
@@ -149,6 +166,7 @@ a > span.field_valid.forgot-pass {
   text-align: right;
   color: #5e66a7;
 }
+
 .social-links span,
 .link-to-auth-page span {
   font-family: "Rubik";
@@ -159,6 +177,7 @@ a > span.field_valid.forgot-pass {
 
   color: #a2a2a2;
 }
+
 .signin-link span {
   color: #5e66a7;
 }
@@ -176,7 +195,7 @@ svg.google_icon {
   opacity: 0;
 }
 
-.check-agree + label {
+.check-agree+label {
   display: inline-flex;
   align-items: flex-start;
   font-family: "Rubik";
@@ -187,7 +206,8 @@ svg.google_icon {
   user-select: none;
   color: #4a4a4f;
 }
-.check-agree + label::before {
+
+.check-agree+label::before {
   content: "";
 
   width: 20px;
@@ -200,7 +220,7 @@ svg.google_icon {
   flex-grow: 0;
 }
 
-.check-agree:checked + label::before {
+.check-agree:checked+label::before {
   border-color: #5e66a7;
   background: #fefeff;
   background-repeat: no-repeat;
@@ -241,12 +261,15 @@ input[type="date"]:not(.has-value):before {
 
   display: block;
 }
+
 @media screen and (max-width: 1080px) {
-.custom-form_s .custom-item,
-.custom-form_s .is-not-confirmed,
-.custom-form_s .hidden-bl
-{
-width:100%;}}
+
+  .custom-form_s .custom-item,
+  .custom-form_s .is-not-confirmed,
+  .custom-form_s .hidden-bl {
+    width: 100%;
+  }
+}
 
 
 @media screen and (max-width: 640px) {
@@ -255,29 +278,37 @@ width:100%;}}
   }
 
 }
+
 @media screen and (max-width: 425px) {
   .custom-input {
     font-size: 14px;
   }
-  .check-agree + label {
+
+  .check-agree+label {
     font-size: 12px;
   }
+
   .link-to-reg-page {
     flex-direction: column;
   }
+
   .signup-link {
     text-align: left;
   }
+
   .social-links span {
     text-align: center;
   }
+
   .tutor-reg .filled-btn {
     font-weight: 600;
     font-size: 14px;
   }
-  .user-type-bl > h3 {
+
+  .user-type-bl>h3 {
     text-align: center;
   }
+
   .choose-type {
     flex-direction: column;
   }

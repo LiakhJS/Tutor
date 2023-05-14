@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
 }
+
 .sert-upload .btn-wrapper {
   justify-content: flex-start;
 }
+
 .empty-btn,
 .filled-btn {
   display: flex;
@@ -20,16 +22,19 @@
   font-size: 18px;
   line-height: 130%;
 }
+
 .empty-btn {
   background: #fefeff;
   border: 2px solid #5e66a7;
   color: #5e66a7;
 }
+
 .filled-btn {
   background: #5e66a7;
   border: 2px solid #5e66a7;
   color: #fefeff;
 }
+
 .user .btn-wrapper {
   justify-content: flex-end;
 }

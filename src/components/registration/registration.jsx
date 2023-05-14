@@ -40,7 +40,6 @@ export const Registration = () => {
     formState: { errors },
   } = useForm({ mode: 'onChange' });
   const onSubmit = (data) => {
-  console.log(data);
     dispatch(
       signUpBaseThunk({
         data: {

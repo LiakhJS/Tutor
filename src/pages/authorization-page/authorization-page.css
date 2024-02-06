@@ -4,6 +4,7 @@
   display: flex;
   row-gap: 30px;
   width: 100%;
+  background-color: aquamarine;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
